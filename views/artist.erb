@@ -1,0 +1,8 @@
+<h1> <%= @artist %> </h1>
+<ul>
+  <% @albums.each() do |album| %>
+    <li><%= album %></li>
+  <% end %>
+</ul>
+
+<a href="/library">Click here to return to your artist library</a>

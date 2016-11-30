@@ -1,0 +1,10 @@
+<h1>Here are all the artists in your collection:</h1>
+
+<ul>
+  <% @artists.each() do |artist| %>
+    <li><a href="/artists/<%= artist.id() %>" id="<%= artist.id() %>"><%= artist.name() %></a></li>
+  <% end %>
+</ul>
+
+<a href="/artist_form">Add another artist</a>
+<a href="/cd_form">Add a CD title</a>

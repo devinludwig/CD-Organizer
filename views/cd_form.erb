@@ -1,0 +1,14 @@
+<h1>Add a CD below.</h1>
+
+<form action="/new_cd" method="post">
+  <label for="title">CD Title:</label>
+  <input id="title" name="title" type="text">
+
+  <select class="form-control form-group" name="artist" id="artist">
+    <% @artists.each() do |artist| %>
+      <option><%= artist.name() %></option>
+    <% end %>
+  </select>
+<button type="submit">Add CD</button>
+
+</form>
